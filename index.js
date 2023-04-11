@@ -3,7 +3,8 @@ function copiarTexto(){
 
     navigator.clipboard.writeText(content)
         .then(() => {
-        console.log("Text copied to clipboard...")
+        console.log("Text copied to clipboard...");
+        alert("CPF copiado");
     })
         .catch(err => {
         console.log('Something went wrong', err);
