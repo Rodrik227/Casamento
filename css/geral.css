@@ -50,7 +50,7 @@ iframe {
 #local #title {
   justify-self: center;
   height: 5vh;
-  align-self: center;
+  text-align: center;
 }
 
 #local #place {
@@ -231,5 +231,9 @@ iframe {
   }
   #footer img {
     width: 20vw;
+  }
+  #local #place {
+    align-self: center;
+    text-align: center;
   }
 }
