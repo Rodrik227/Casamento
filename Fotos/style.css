@@ -1,0 +1,119 @@
+/* GERAL */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+img {
+width: 100vw
+}
+.pagina {
+display: grid;
+}
+html {
+margin: 0;
+}
+/* LINKS */
+ .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;   
+    margin-top: 20vh;
+    margin-bottom: 40vh;
+ }
+.inner {
+    display: grid;
+    text-align: center;
+    grid-template-columns: auto auto;
+    
+}
+.inner h1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+section {
+    background-color: aquamarine;
+    margin: 1vw;
+    width: 20vw;
+    height: 20vh;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 1px 2px 1px rgb(0,0,0,0.5);
+}
+section a{
+    text-decoration: none;
+    color: black;
+}
+.festa:hover {
+    background-image: url(assets/FESTA\ \(144\).jpg);
+    background-size: contain;
+}
+.festa:hover h1{
+    color: #ffffff;
+}
+.festa:hover a{
+    color: white;
+}
+section h1{
+    margin-top: 7vh;
+}
+.cerimonia:hover {
+    background-image: url(assets/CERIMONIAL\ \(148\).jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* FOOTER */
+#footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    background-color: #D9D9D9;
+    padding: 20px;
+    margin-top: 10vh;
+    margin-left: 0;
+
+}
+
+#git img {
+width: 3vw;
+}
+
+#git {
+justify-self: end;
+text-align: center;
+}
+#index img{
+width: 3.1vw;
+}
+#index {
+justify-self: end;
+text-align: center;
+}
+
+/*MOBILE*/
+@media(max-width: 480px) {
+.inner {
+    display: block;
+}
+section {
+    width: 80vw;
+}
+.links {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+section h1{
+    margin-top: 10vw    ;
+    align-self: center;
+}
+#footer {
+    padding: 0;
+    display: block;
+}
+#footer img {
+    width: 17vw;
+}
+}
